@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
+const start_time=Date.now()
 /**
  * GET product list.
  *
@@ -10,7 +11,7 @@ router.get("/", async (req, res) => {
   try {
     res.json({
       status: 200,
-      message: "Get data has successfully",
+      message: `Start on ${start_time}`,
     });
   } catch (error) {
     console.error(error);
