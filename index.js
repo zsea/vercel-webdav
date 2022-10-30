@@ -1,11 +1,10 @@
-const Koa = require('koa');
-const app = new Koa();
+const express = require("express");
+const app = express();
+const product = require("./product");
 
-app.use(async ctx => {
-    ctx.body = 'Hello Vercel, Hi Koa2';
-});
+app.use(express.json({ extended: false }));
 
-const port = Number(options.port || process.env.PORT || '3000')
-app.listen(port, () => {
-    console.log('3008项目启动')
-});
+app.use("/product", product);
+
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => console.log(`Server is running in port ${PORT}`));
