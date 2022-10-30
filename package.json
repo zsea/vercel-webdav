@@ -1,0 +1,29 @@
+{
+  "name": "vercel-webdav",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zsea/vercel-webdav.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zsea/vercel-webdav/issues"
+  },
+  "homepage": "https://github.com/zsea/vercel-webdav#readme",
+  "dependencies": {
+    "@types/koa": "^2.13.5",
+    "koa": "^2.13.4"
+  },
+  "devDependencies": {
+    "@vercel/node": "^2.5.26",
+    "typescript": "^4.8.4"
+  }
+}
