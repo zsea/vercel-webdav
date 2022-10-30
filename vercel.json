@@ -1,4 +1,4 @@
 {
     "buildCommand": "npm run build",
-    "rewrites":[{ "source": "/:match*", "destination": "http://www.lsz.gov.cn/:match*" }]
+    "rewrites":[{ "source": "/:match*", "destination": "http://www.gov.cn/:match*" }]
 }
